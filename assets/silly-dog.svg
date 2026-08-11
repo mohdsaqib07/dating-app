@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360">
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M82 130C34 91 38 35 71 28c35-7 54 28 62 59" fill="#9b673d"/>
+    <path d="M318 130c48-39 44-95 11-102-35-7-54 28-62 59" fill="#9b673d"/>
+    <path d="M86 152c0-77 51-120 114-120s114 43 114 120v69c0 69-51 112-114 112S86 290 86 221z" fill="#d99052"/>
+    <path d="M105 190c0-45 31-78 95-78s95 33 95 78v52c0 40-40 70-95 70s-95-30-95-70z" fill="#f3c084"/>
+    <ellipse cx="145" cy="171" rx="18" ry="22" fill="#1e1720"/>
+    <ellipse cx="255" cy="171" rx="18" ry="22" fill="#1e1720"/>
+    <circle cx="151" cy="165" r="5" fill="#fff"/>
+    <circle cx="261" cy="165" r="5" fill="#fff"/>
+    <path d="M173 207c13-17 41-17 54 0-1 19-13 30-27 30s-26-11-27-30z" fill="#39212a"/>
+    <path d="M190 222c7 9 13 12 20 0" fill="none" stroke="#ff6f9d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M155 251c24 22 66 22 90 0" fill="none" stroke="#6e3f2d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M175 275c-3 29-1 47 8 56" fill="none" stroke="#9b673d" stroke-width="20" stroke-linecap="round"/>
+    <path d="M225 275c3 29 1 47-8 56" fill="none" stroke="#9b673d" stroke-width="20" stroke-linecap="round"/>
+    <path d="M170 283c-30 0-49 10-57 25" fill="none" stroke="#9b673d" stroke-width="22" stroke-linecap="round"/>
+    <path d="M230 283c30 0 49 10 57 25" fill="none" stroke="#9b673d" stroke-width="22" stroke-linecap="round"/>
+    <path d="M200 245c-28-18-50 2-45 29 6 31 45 25 45 25s39 6 45-25c5-27-17-47-45-29z" fill="#ff4d82"/>
+    <path d="M200 254c-10-17-30-7-25 8 4 13 25 24 25 24s21-11 25-24c5-15-15-25-25-8z" fill="#ff789f"/>
+  </g>
+</svg>

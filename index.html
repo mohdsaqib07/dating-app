@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Shagufa 💌</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true">
+      <div class="blob blob-one"></div>
+      <div class="blob blob-two"></div>
+      <div class="blob blob-three"></div>
+    </div>
+
+    <div id="hearts" aria-hidden="true"></div>
+    <div id="confetti" aria-hidden="true"></div>
+
+    <!-- Opening animation -->
+    <section id="intro" class="intro-screen">
+      <div class="intro-content">
+        <div class="handwritten">Shagufa</div>
+        <div class="intro-line"></div>
+
+        <div class="envelope-wrap" id="envelope">
+          <div class="envelope-shadow"></div>
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter">
+              <span>💌</span>
+            </div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+            <div class="seal">♥</div>
+          </div>
+        </div>
+
+        <p class="intro-caption">I made something for you...</p>
+      </div>
+    </section>
+
+    <main class="app">
+      <div class="card">
+        <!-- STEP 1 -->
+        <section id="step1" class="step hidden">
+          <div class="progress">A VERY IMPORTANT QUESTION</div>
+
+          <div class="emoji">💌</div>
+
+          <div class="progress">STEP 1 OF 4</div>
+
+          <h1>Hey Shagufa , Would you like to go on a date with me? 👀</h1>
+
+          <div class="dog-wrap">
+            <div class="dog-glow"></div>
+            <img
+              src="assets/silly-dog.svg"
+              alt="A silly happy dog holding a heart"
+              class="dog"
+            />
+          </div>
+
+          <p>
+            And before you answer, just know that I spent a completely
+            unreasonable amount of time making this website. 😌
+          </p>
+
+          <div class="question-area" id="questionArea">
+            <button id="yesBtn" class="btn yes-btn">YES ❤️</button>
+            <button id="noBtn" class="btn no-btn">NO 🙃</button>
+          </div>
+
+          <div id="noMessage" class="no-message" role="status">Nice try 😌</div>
+        </section>
+
+        <!-- STEP 2 -->
+        <section id="step2" class="step hidden">
+          <div class="emoji celebration">🎉</div>
+          <div class="progress">STEP 2 OF 4</div>
+          <h1>Well, well, well...</h1>
+          <p>
+            Shagufa said <strong>YES</strong>. Incredible. <br /><br />
+            I always knew your judgment was questionable, but this is the best
+            questionable decision you've made. 😂
+          </p>
+          <button id="nextDate" class="btn primary-btn">
+            Okay, let's plan this 😌 →
+          </button>
+        </section>
+
+        <!-- STEP 3 -->
+        <section id="step3" class="step hidden">
+          <div class="emoji">📅</div>
+          <div class="progress">STEP 3 OF 4</div>
+          <h1>Pick our date</h1>
+          <p>
+            Choose a day and time. I promise not to make you fill out a 47-page
+            application.
+          </p>
+
+          <div class="form-group">
+            <label for="dateInput">📆 Pick a day</label>
+            <input type="date" id="dateInput" />
+          </div>
+
+          <div class="form-group">
+            <label for="timeInput">⏰ Pick a time</label>
+            <select id="timeInput">
+              <option value="">Choose a time</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>1:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+              <option>8:00 PM</option>
+            </select>
+          </div>
+
+          <button id="continueDate" class="btn primary-btn" disabled>
+            Continue ❤️
+          </button>
+        </section>
+
+        <!-- STEP 4 -->
+        <section id="step4" class="step hidden">
+          <div class="emoji">✨</div>
+          <div class="progress">STEP 4 OF 4</div>
+          <h1>Pick the date vibe</h1>
+          <p>
+            What sounds good to you? I promise there are no wrong answers.
+            Except maybe pineapple discourse. 👀
+          </p>
+
+          <div class="vibes">
+            <button class="vibe" data-vibe="Pizza"><span>🍕</span>Pizza</button>
+            <button class="vibe" data-vibe="Pasta"><span>🍝</span>Pasta</button>
+            <button class="vibe" data-vibe="Ramen"><span>🍜</span>Ramen</button>
+            <button class="vibe" data-vibe="Tacos"><span>🌮</span>Tacos</button>
+            <button class="vibe" data-vibe="Movie"><span>🎬</span>Movie</button>
+            <button class="vibe" data-vibe="Something Else">
+              <span>✨</span>Something Else
+            </button>
+          </div>
+
+          <button id="confirmVibe" class="btn primary-btn" disabled>
+            Lock it in 🔒
+          </button>
+        </section>
+
+        <!-- CONFIRMATION -->
+        <section id="step5" class="step hidden">
+          <div class="emoji celebration">💖</div>
+          <h1>IT'S A DATE!</h1>
+          <p>Look at you making excellent life decisions. 😌</p>
+
+          <div class="summary">
+            <div><span>📅</span><strong id="finalDate"></strong></div>
+            <div><span>⏰</span><strong id="finalTime"></strong></div>
+            <div><span>✨</span><strong id="finalVibe"></strong></div>
+          </div>
+
+          <p>
+            Everything is confirmed.
+            <br />
+            Now we just need to deal with some very serious paperwork. 🙄
+          </p>
+
+          <button id="paymentBtn" class="btn primary-btn">
+            Open the very serious paperwork →
+          </button>
+        </section>
+
+        <!-- MOCK PAYMENT -->
+        <section id="payment" class="step hidden">
+          <div class="progress">DATE DEPARTMENT™</div>
+          <h1>Your Date Pass</h1>
+          <p class="payment-subtitle">
+            One tiny final step before this becomes officially official.
+          </p>
+
+          <div class="ticket">
+            <div class="ticket-top">
+              <div>
+                <span class="ticket-label">RESERVATION</span>
+                <h2>DATE PASS <span>♥</span></h2>
+              </div>
+              <div class="ticket-stamp">APPROVED</div>
+            </div>
+
+            <div class="ticket-divider"></div>
+
+            <div class="ticket-route">
+              <div>
+                <small>FOR</small>
+                <strong>SHAGUFA</strong>
+              </div>
+              <div class="ticket-heart">♥</div>
+              <div>
+                <small>WITH</small>
+                <strong>ME</strong>
+              </div>
+            </div>
+
+            <div class="ticket-details">
+              <div>
+                <small>DATE</small>
+                <strong id="payDate"></strong>
+              </div>
+              <div>
+                <small>TIME</small>
+                <strong id="payTime"></strong>
+              </div>
+              <div>
+                <small>VIBE</small>
+                <strong id="payVibe"></strong>
+              </div>
+            </div>
+
+            <div class="ticket-divider"></div>
+
+            <div class="ticket-total">
+              <span>Reservation fee</span>
+              <strong>₹0.00</strong>
+            </div>
+
+            <div class="fake-barcode">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <p class="fake-security">
+              🔒 100% fake checkout · No payment details required
+            </p>
+          </div>
+
+          <button id="payBtn" class="btn payment-btn">
+            Confirm my ₹0.00 date pass 💸
+          </button>
+
+          <p class="tiny-note">Your wallet may now breathe a sigh of relief.</p>
+        </section>
+
+        <!-- FINAL -->
+        <section id="final" class="step hidden">
+          <div class="emoji celebration">🥳</div>
+          <div class="progress">RESERVATION COMPLETE</div>
+          <h1>Payment successful!</h1>
+          <p>Congratulations, Shagufa. You have officially purchased:</p>
+
+          <div class="final-date">
+            <div class="big-heart">❤️</div>
+            <h2>ONE DATE WITH ME</h2>
+            <div class="final-details">
+              <span id="finalDate2"></span>
+              <span>•</span>
+              <span id="finalTime2"></span>
+              <span>•</span>
+              <span id="finalVibe2"></span>
+            </div>
+          </div>
+
+          <p>
+            Cancellation policy:
+            <br />
+            <strong>Absolutely not. 😌</strong>
+          </p>
+
+          <p class="small-note">See you on the date, Shagufa. ❤️</p>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
